@@ -1,0 +1,126 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgba(173, 66, 66, 0.404);
+}
+
+body.yes {
+    margin-top: 700px;
+    background-color: rgba(173, 66, 66, 0.404);
+    height: 90%;
+    background: url(./cc.jpg);
+    background-position: center;
+}
+
+body.yes .confirm{
+    display: none;
+}
+
+body.yes .dialog {
+ display: block   
+}
+
+.heart{
+    animation: heartbeat 1s infinite;
+    background-color: red;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-left: 5px;
+}
+
+.heart::before, .heart::after{
+    content: '';
+    background-color: red;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+}
+
+.heart::before{
+    top: -5px;
+    left: 5px;
+}
+
+.heart::after{
+    top: 0;
+    left: 5px;
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    20% {
+        transform: scale(1.25);
+    }
+    40% {
+        transform: (1.5);
+    }
+}
+
+.confirm {
+    min-width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #b0498d;
+    box-shadow: 3px 3px 3px #7e3a68;
+    border-radius: 5px;
+}
+
+.confirm_container{
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+}
+
+.confirm_actions{
+    display: flex;
+    column-gap: 10px;
+    padding: 10px;
+}
+
+.confirm_actions button {
+    width: 100%;
+    cursor: pointer;
+    font-size: 17px;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.confirm_actions .btn-yes{
+    background-color: #a3ddcb;
+}
+
+.confirm_actions .btn-no{
+    position: relative;
+    background-color: #e97777;
+}
+
+.dialog{
+    display: none;
+    min-width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f261ac;
+    box-shadow: 3px 3px rgb(160, 69, 116);
+    border-radius: 5px;
+    font-size: 22px;
+}
+
+.dialog-container{
+    padding: 15px 15px;
+}
+
+.dialog-container p{
+    color: #fff;
+    text-align: center;
+}
