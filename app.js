@@ -17,8 +17,8 @@ $btnYes.addEventListener('click', () => {
 $btnNo.addEventListener('mouseover', (e) => {
     const $target = e.target
 
-    $target.style.top = `${Math.random() * 500}px`
-    $target.style.right = `${Math.random() * 500}px`
+    $target.style.top = `${Math.random() * 350}px`
+    $target.style.right = `${Math.random() * 350}px`
 
     if(counter >=10) {
         $target.innerHTML = "WHYYYY ????😢😢"
