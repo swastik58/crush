@@ -7,7 +7,7 @@ const $btnYes = document.querySelector('.js-yes'),
 let counter=0
 
 $btnYes.addEventListener('mouseover', (e) => {
-    e.target.innerHTML = 'Really ?? 😍 '
+    e.target.innerHTML = 'Really ?? 😍😍 '
 })
 
 $btnYes.addEventListener('click', () => {
@@ -17,11 +17,11 @@ $btnYes.addEventListener('click', () => {
 $btnNo.addEventListener('mouseover', (e) => {
     const $target = e.target
 
-    $target.style.top = `${Math.random() * 200}px`
-    $target.style.right = `${Math.random() * 200}px`
+    $target.style.top = `${Math.random() * 500}px`
+    $target.style.right = `${Math.random() * 500}px`
 
     if(counter >=10) {
-        $target.innerHTML = "HMMMMM"
+        $target.innerHTML = "WHYYYY ????😢😢"
     }
 
     counter += 1
